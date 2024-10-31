@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Word Scramble Game</h1>
+
+        <div id="game">
+            <p><strong>Scrambled Word:</strong> <span id="scrambled-word"></span></p>
+            <input type="text" id="guess" placeholder="Type your guess" class="input-field">
+            <button class="btn" onclick="checkGuess()">Submit</button>
+
+            <p id="status" class="status-msg"></p>
+            <p><strong>Score:</strong> <span id="score">0</span></p>
+            <p><strong>Best Score:</strong> <span id="best-score">0</span></p>
+            <p><strong>Attempted Words:</strong> <span id="attempted-words">0</span></p>
+            <p><strong>Failed Attempts:</strong> <span id="failed-attempts">0</span></p>
+
+            <!-- Button to Reveal the Correct Answer -->
+            <button class="btn" onclick="revealWord()">Reveal Correct Word</button>
+
+            <div id="correct-answer" class="hidden">
+                <p>The correct word was: <span id="correct-word"></span></p>
+            </div>
+
+            <button class="btn end-game-btn" onclick="endGame()">End Game</button>
+        </div>
+
+        <div id="game-over-message" class="hidden"></div>
+        <button id="start-btn" class="btn" onclick="startGame()">Start Game</button>
+    </div>
+
+    <script src="script.js"></script>
+
+<footer>
+    <p> created by Omme Symon</p>
+  </footer>
+</body>
+</html> 
